@@ -34,3 +34,8 @@ class Wolf(Animal):
         return (f'The animal\'s name is {self.Name}, it makes a {self.Sound}, its size is'
                 f'{self.Size}, and its intelligence level is {self.Intelligence}. Its'
                 f'territory is {self.TerritorySize} square miles.')
+
+
+chewie = Parrot(30, 29, "Chewie", "Squawk", 1, 10)
+nightEyes = Wolf(100, "Nighteyes", "Howl", 8, 7)
+copper = Animal("Copper", "Neigh", 10, 6)
