@@ -6,7 +6,7 @@ class Animal:
         self.Intelligence = Intelligence  # This is an integer, between 1 and 10.
 
     def Description(self):
-        return (f'The animal\'s name is {self.Name}, it makes a {self.Sound}, its size is'
+        return (f'The animal\'s name is {self.Name}, it makes a {self.Sound}, its size is '
                 f'{self.Size}, and its intelligence level is {self.Intelligence}')
 
 
@@ -17,7 +17,7 @@ class Parrot(Animal):
         self.NumberWords = NumberWords  # This is an integer.
 
     def Description(self):
-        return (f'The animal\'s name is {self.Name}, it makes a {self.Sound}, its size is'
+        return (f'The animal\'s name is {self.Name}, it makes a {self.Sound}, its size is '
                 f'{self.Size}, and its intelligence level is {self.Intelligence}. It has a '
                 f'wingspan of {self.WingSpan}cm and can say {self.NumberWords} words.')
 
@@ -31,11 +31,18 @@ class Wolf(Animal):
         self.TerritorySize += value
 
     def Description(self):
-        return (f'The animal\'s name is {self.Name}, it makes a {self.Sound}, its size is'
-                f'{self.Size}, and its intelligence level is {self.Intelligence}. Its'
+        return (f'The animal\'s name is {self.Name}, it makes a {self.Sound}, its size is '
+                f'{self.Size}, and its intelligence level is {self.Intelligence}. Its '
                 f'territory is {self.TerritorySize} square miles.')
 
 
 chewie = Parrot(30, 29, "Chewie", "Squawk", 1, 10)
 nightEyes = Wolf(100, "Nighteyes", "Howl", 8, 7)
 copper = Animal("Copper", "Neigh", 10, 6)
+
+nightEyes.SetTerritorySize(-20)
+chewie.NumberWords += 2
+
+print(chewie.Description())
+print(nightEyes.Description())
+print(copper.Description())
