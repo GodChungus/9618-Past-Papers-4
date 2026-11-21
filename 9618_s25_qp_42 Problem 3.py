@@ -8,3 +8,16 @@ class Animal:
     def Description(self):
         return (f'The animal\'s name is {self.Name}, it makes a {self.Sound}, its size is'
                 f'{self.Size}, and its intelligence level is {self.Intelligence}')
+
+
+class Parrot(Animal):
+    def __init__(self, WingSpan, NumberWords, Name, Sound, Size, Intelligence):
+        Animal.__init__(self, Name, Sound, Size, Intelligence)
+        self.WingSpan = WingSpan
+        self.NumberWords = NumberWords
+
+    def Description(self):
+        return (f'The animal\'s name is {self.Name}, it makes a {self.Sound}, its size is'
+                f'{self.Size}, and its intelligence level is {self.Intelligence}. It has a '
+                f'wingspan of {self.WingSpan}cm and can say {self.NumberWords} words.')
+
