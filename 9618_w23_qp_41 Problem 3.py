@@ -55,4 +55,15 @@ class BikeCharacter(Character):
 
 
 character1 = Character("Jack", 50, 50)
+character2 = BikeCharacter("Karla", 100, 50)
 
+userCharacter = str(input("Please enter the character you want to move(Jack or Karla): "))
+while userCharacter.lower() != "jack" and userCharacter.lower() != "karla":
+    userCharacter = str(input("Invalid. Please enter the character you want to move(Jack or Karla): "))
+userDirection = str(input("Which direction would you like the character to move in? "))
+if userCharacter.lower() == "jack":
+    character1.Move(userDirection)
+    print(f'Jack\'s new position is X = {character1.GetXPosition()} Y = {character1.GetYPosition()}.')
+else:
+    character2.Move(userDirection)
+    print(f'Karla\'s new position is X = {character2.GetXPosition()} Y = {character2.GetYPosition()}.')
