@@ -41,6 +41,18 @@ class BikeCharacter(Character):
     def __init__(self, Name, XPosition, YPosition):
         super().__init__(Name, XPosition, YPosition)
 
+    def Move(self, input_string):
+        if input_string.lower() == "up":
+            super().SetYPosition(20)
+        elif input_string.lower() == "down":
+            super().SetYPosition(-20)
+        elif input_string.lower() == "left":
+            super().SetXPosition(-20)
+        elif input_string.lower() == "right":
+            super().SetXPosition(20)
+        else:
+            print("Invalid input")
+
 
 character1 = Character("Jack", 50, 50)
 
