@@ -4,4 +4,10 @@ class Character:
         self.XPosition = XPosition  # This is an integer.
         self.YPosition = YPosition  # This is an integer.
 
+    def GetXPosition(self):
+        return self.XPosition
 
+    def GetYPosition(self):
+        return self.YPosition
+
+    
