@@ -39,7 +39,7 @@ class Character:
 
 class BikeCharacter(Character):
     def __init__(self, Name, XPosition, YPosition):
-        super().__init__(self, Name, XPosition)
+        super().__init__(Name, XPosition, YPosition)
 
 
 character1 = Character("Jack", 50, 50)
