@@ -42,3 +42,8 @@ FirstCharacter = Character("Royal", datetime.date(2019, 1, 1), 70, 30)
 FirstCharacter.Learn()
 print(f'The name of the character is {FirstCharacter.GetName()}. They are {FirstCharacter.ReturnAge()} years old. Moreover, '
       f'their intelligence level is {FirstCharacter.GetIntelligence()}.')
+
+FirstMagic = MagicCharacter("Light", datetime.date(2018, 3, 3), 75, 22, "fire")
+FirstMagic.Learn()
+print(f'The name of the magic character is {FirstMagic.GetName()}. They are {FirstMagic.ReturnAge()} years old. Moreover, '
+      f'their intelligence level is {FirstMagic.GetIntelligence()}.')
