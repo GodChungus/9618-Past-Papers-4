@@ -3,10 +3,10 @@ import datetime
 
 class Character:
     def __init__(self, CharacterName, DateOfBirth, Intelligence, Speed):
-        self.CharacterName = CharacterName
-        self.DateOfBirth = DateOfBirth
-        self.Intelligence = Intelligence
-        self.Speed = Speed
+        self.CharacterName = CharacterName  # This is a string.
+        self.DateOfBirth = DateOfBirth  # This is a date.
+        self.Intelligence = Intelligence  # This is a real value.
+        self.Speed = Speed  # This is an integer value.
 
     def GetIntelligence(self):
         return self.Intelligence
