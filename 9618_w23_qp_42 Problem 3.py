@@ -13,3 +13,17 @@ class Character:
 
     def GetName(self):
         return self.CharacterName
+
+    def SetIntelligence(self, value):
+        self.Intelligence = value
+
+    def Learn(self):
+        self.Intelligence *= 1.1
+
+    def ReturnAge(self):
+        return 2023 - self.DateOfBirth.year()
+
+
+FirstCharacter = Character("Royal", datetime.date(2019, 1, 1), 70, 30)
+FirstCharacter.Learn()
+
