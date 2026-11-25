@@ -21,9 +21,11 @@ class Character:
         self.Intelligence *= 1.1
 
     def ReturnAge(self):
-        return 2023 - self.DateOfBirth.year()
+        return 2023 - self.DateOfBirth.year
 
 
 FirstCharacter = Character("Royal", datetime.date(2019, 1, 1), 70, 30)
 FirstCharacter.Learn()
+print(f'The name of the character is {FirstCharacter.GetName()}. They are {FirstCharacter.ReturnAge()} years old. Moreover,'
+      f'their intelligence level is {FirstCharacter.GetIntelligence()}.')
 
