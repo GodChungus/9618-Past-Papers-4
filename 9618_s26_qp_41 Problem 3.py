@@ -1,13 +1,13 @@
 class TheObject:
     def __init__(self, ObjectType, Amount):
-        self.Object = ObjectType
-        self.Amount = Amount
+        self.Object = ObjectType # This is a string.
+        self.Amount = Amount # This is an integer.
 
 
 class Path:
     def __init__(self, NumberSpaces):
-        self.NumberSpaces = NumberSpaces
-        self.BoardArray = []
+        self.NumberSpaces = NumberSpaces # This is an integer.
+        self.BoardArray = [] # This is of type TheObject.
 
         for _ in range(100):
             self.BoardArray.append(TheObject("", -1))
