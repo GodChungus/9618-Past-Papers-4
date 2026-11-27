@@ -38,4 +38,11 @@ class Helicopter(Vehicle):
         self.__MaxHeight = MaxHeight  # This is an integer.
         self.__VerticalPosition = 0  # This is an integer.
 
-    
+    def IncreaseSpeed(self):
+        self.__VerticalPosition += self.__VerticalChange
+        if self.__VerticalPosition > self.__MaxHeight:
+            self.__VerticalPosition = self.__MaxHeight
+        self.__CurrentSpeed += self.__IncreaseAmount
+        if self.__CurrentSpeed > self.__MaxSpeed:
+            self.__CurrentSpeed = self.__MaxSpeed
+        self.__HorizontalPosition += self.__CurrentSpeed
